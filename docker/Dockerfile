@@ -38,4 +38,5 @@ RUN curl -fLo /tmp/LibBi.tar.gz https://github.com/lawmurray/LibBi/archive/stabl
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     git \
-    npm
+    npm \
+    sudo
