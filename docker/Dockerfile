@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM rhub/ubuntu
 
 LABEL maintainer="Sebastian Funk <sebastian.funk@lshtm.ac.uk>"
 
