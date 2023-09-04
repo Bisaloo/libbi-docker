@@ -1,4 +1,4 @@
-FROM rhub/ubuntu
+FROM ubuntu:22.04
 
 LABEL maintainer="Sebastian Funk <sebastian.funk@lshtm.ac.uk>"
 
