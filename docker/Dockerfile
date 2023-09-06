@@ -34,9 +34,13 @@ RUN curl -fLo /tmp/LibBi.tar.gz https://github.com/lawmurray/LibBi/archive/stabl
     rm /tmp/LibBi.tar.gz && \
     rm -rf ~/LibBi-stable
 
+# Ensure apt runs in non-interactive mode
+ARG DEBIAN_FRONTEND=noninteractive
+
 # utils for GitHub Actions CI
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     git \
     npm \
-    sudo
+    sudo \
+    tzdata
